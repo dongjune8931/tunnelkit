@@ -13,6 +13,9 @@ web/node_modules/
 # 데이터
 data/
 
+# 로컬 전용 문서
+docs/
+
 # IDE
 .idea/
 .vscode/
