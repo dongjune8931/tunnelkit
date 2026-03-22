@@ -1,0 +1,19 @@
+# 환경설정
+.env
+*.db
+
+# Go 빌드 결과
+bin/
+server/web/dist/
+
+# Node
+node_modules/
+web/node_modules/
+
+# 데이터
+data/
+
+# IDE
+.idea/
+.vscode/
+*.swp
