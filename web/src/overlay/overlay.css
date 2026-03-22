@@ -1,0 +1,110 @@
+/* previewd 피드백 오버레이 스타일 */
+#__previewd-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999998;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: system-ui, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(79, 70, 229, 0.4);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+#__previewd-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(79, 70, 229, 0.5);
+}
+#__previewd-btn.active {
+  background: #ef4444;
+}
+
+.__previewd-highlight {
+  outline: 3px solid #4f46e5 !important;
+  outline-offset: 2px !important;
+  cursor: crosshair !important;
+}
+
+#__previewd-popover {
+  position: fixed;
+  z-index: 999999;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  padding: 16px;
+  width: 280px;
+  font-family: system-ui, sans-serif;
+}
+
+#__previewd-popover textarea {
+  width: 100%;
+  min-height: 80px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  resize: vertical;
+  outline: none;
+  font-family: inherit;
+}
+#__previewd-popover textarea:focus {
+  border-color: #4f46e5;
+}
+
+#__previewd-popover input {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 13px;
+  margin-bottom: 10px;
+  outline: none;
+  font-family: inherit;
+}
+#__previewd-popover input:focus {
+  border-color: #4f46e5;
+}
+
+#__previewd-popover .submit-btn {
+  width: 100%;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#__previewd-popover .cancel-btn {
+  width: 100%;
+  background: transparent;
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.__previewd-pin {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: #4f46e5;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  z-index: 999997;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.15s;
+}
+.__previewd-pin:hover {
+  transform: rotate(-45deg) scale(1.2);
+}
